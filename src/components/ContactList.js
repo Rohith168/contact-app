@@ -8,12 +8,15 @@ const ContactList = (props) => {
     props.getContactId(id);
   };
   const renderContactList = props.contacts.map((contact) => {
+    //table=document.getElementById("mytable");
     return (
-      <ContactCard
+      //table.insertRow(
+    <ContactCard
         contact={contact}
         clickHander={deleteConactHandler}
         key={contact.id}
       />
+      //)
     );
   });
   return <div className="ui celled list">{renderContactList}</div>;

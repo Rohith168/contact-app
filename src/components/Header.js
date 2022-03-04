@@ -44,10 +44,18 @@ const Header = () => {
       </div>
       <div className="row">
         <h1>My Contacts</h1>
+        <table>
+          <tr>
+          <th>Name</th>
+          <th>Ph No</th>
+          <th>Email</th>
+          </tr>
+        </table>
       <ContactList contacts={contacts} getContactId={removeContactHandler} />
       </div>
     </div>
   );
+  
 };
 
 export default Header;
